@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/reset.css" type="text/css" media="screen">
+  <link rel="stylesheet" href="css/main.css" type="text/css" media="screen">
+  <title>Basic Responsive Layout</title>
+  <!-- [if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+<body>
+  <div class="siteContainer">
+  <header id="mainHeader">
+    <div id="logo">
+      <a href="#">Logo</a>
+    </div><!--Close logo-->
+    <input class="menu-btn" type="checkbox" id="menu-btn"/>
+    <label class="menu-icon" for="menu-btn">
+      <span class="navicon"></span>
+    </label>
+
+      <h2 class="hidden">Main navigation</h2>
+      <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About </a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Advertisements</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+
+  </header><!-- Close mainHeader-->
+  <main>
+    <div id="promo"></div>
+    <div id="welcome">
+      <div class="welcomepic"></div>
+      <div class="welcometext"></div>
+    </div><!-- Close welcome -->
+    <div id="features">
+      <div class="featureleft">
+      <div class="feature1"></div>
+      <div class="feature2"></div>
+    </div><!-- Close featureleft -->
+      <div class="featureright">
+      <div class="feature3"></div>
+      <div class="feature4"></div>
+    </div><!-- Close featureright-->
+  </div><!-- Close features -->
+
+  <div id="products">
+    <div class="product1 productCon"></div>
+    <div class="product2 productCon"></div>
+    <div class="product3 productCon"></div>
+    <div class="product4 productCon"></div>
+    <div class="product5 productCon"></div>
+    <div class="product6 productCon"></div>
+
+  </div><!-- Close products-->
+  <div id="sales">
+    <div class="sale1"></div>
+    <div class="sale2"></div>
+
+  </div><!-- Close sales-->
+
+
+  </main>
+  <footer>
+    <div class="navfooter"></div>
+    <div class="contact"></div>
+    <div class="news"></div>
+    <div class="social"></div>
+  </footer>
+
+
+</div><!-- Close siteContainer-->
+
+  <script src="js/main.js"></script>
+</body>
+</html>
