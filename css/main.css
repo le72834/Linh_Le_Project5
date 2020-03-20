@@ -1,0 +1,387 @@
+/*CSS Document */
+
+div, p, body, header, footer, section, article, nav {
+  margin: 0;
+  padding: 0;
+}
+
+/*HTML selectors */
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+}
+a:link, a:visited {
+  text-decoration: none;
+}
+a:hover, a:active {
+  text-decoration: none;
+}
+.hidden {
+  display: none;
+}
+a {
+  color: #789;
+}
+.siteContainer {
+  margin: 0 auto;
+  width: 100%;
+  margin-left: 20px;
+  margin-right: 20px;
+
+}
+#mainHeader {
+  background-color: #fff;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  width: 97%;
+  z-index: 3;
+  position: fixed;
+
+}
+
+#logo {
+  display: block;
+  font-size: 16px;
+  padding: 20px;
+  float: left;
+
+}
+
+ ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #fff;
+
+}
+ul li {
+  cursor: pointer;
+
+}
+ ul li a {
+  display: block;
+  padding: 20px;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+ul li a:hover {
+  background-color: #f4f4f4;
+}
+.menu-btn:hover {
+  background-color: #f4f4f4;
+
+}
+.menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+
+}
+.menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+  margin-right: 20px;
+}
+ .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.navicon::before {
+  top: 5px;
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+.navicon::after {
+  top: -5px;
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+.menu-btn {
+  display: none;
+}
+.menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+.menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+.menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+.menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+.menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+@media screen and (min-width: 850px) {
+
+  ul li {
+  float: left;
+  }
+  ul li a{
+    padding: 20px 30px;
+    color: #789;
+
+  }
+  .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .menu-icon {
+    display: none;
+  }
+}
+#promo {
+  padding-top: 30%;
+  width: 97%;
+  background-color: #789;
+
+}
+#welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.welcomepic {
+  margin-top: 20px;
+  padding-top: 10%;
+  width: 45%;
+  background-color: #789;
+
+}
+.welcometext {
+  margin-top: 20px;
+  padding-top: 10%;
+  width: 40%;
+  background-color: #789;
+
+}
+@media screen and (min-width: 700px) {
+  #welcome {
+    width: 97%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+#features {
+  margin-top: 20px;
+  width: 97%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+.feature1 {
+  background-color: pink;
+  width: 80%;
+  padding: 5%;
+  margin: 10px;
+
+}
+.feature2 {
+  background-color: pink;
+  width: 80%;
+  padding: 5%;
+  margin: 10px;
+
+}
+.feature3 {
+  background-color: #789;
+  width: 80%;
+  padding: 5%;
+  margin: 10px;
+
+}
+.feature4 {
+  background-color: #789;
+  width: 80%;
+  padding: 5%;
+  margin: 10px;
+
+}
+@media screen and (min-width: 600px) {
+  #features {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 97%;
+   }
+  .featureleft {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+   }
+  .feature1, .feature2 {
+    background-color: pink;
+  }
+  .featureright {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+
+  }
+
+}
+@media screen and (min-width: 780px) {
+  #features {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .featureleft {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+  }
+  .feature1, .feature2 {
+    background-color: pink;
+  }
+  .featureright {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+  }
+}
+#products {
+  display: flex;
+  flex-direction: column;
+
+}
+.product1 {
+  background-color: black;
+  padding: 5%;
+  width: 80%;
+  margin: 10px;
+}
+.product2 {
+  background-color: black;
+  padding: 5%;
+  width: 80%;
+  margin: 10px;
+}
+.product3 {
+  background-color: black;
+  padding: 5%;
+  width: 80%;
+  margin: 10px;
+}
+.product4 {
+  background-color: #789;
+  padding: 5%;
+  width: 80%;
+  margin: 10px;
+}
+.product5 {
+  background-color: #789;
+  padding: 5%;
+  width: 80%;
+  margin: 10px;
+}
+.product6 {
+  background-color: #789;
+  padding: 5%;
+  width: 80%;
+  margin: 10px;
+}
+@media screen and (min-width:600px) {
+  #products {
+  display: grid;
+  grid-template-columns: 33% 33%;
+  }
+  .product1,.product2, .product3 {
+    background-color: black;
+  }
+
+}
+@media screen and (min-width:780px) {
+  #products {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  }
+  .product1,.product2, .product3 {
+    background-color: black;
+  }
+
+}
+
+#sales {
+  display: flex;
+  flex-direction: column;
+  width: 97%;
+}
+.sale1 {
+  width: 70%;
+  padding: 5%;
+  background-color: #123;
+  margin: 10px;
+}
+.sale2 {
+  width: 70%;
+  padding: 5%;
+  background-color: #123;
+  margin: 10px;
+}
+@media screen and (min-width:600px) {
+  #sales{
+  display:flex;
+  flex-direction:row;
+  justify-content: space-between;
+  }
+}
+footer {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content: center;
+
+}
+.navfooter {
+  background-color: #789;
+  padding: 10%;
+  margin: 20px;
+}
+.contact {
+  background-color: #789;
+  padding: 10%;
+  margin: 20px;
+}
+.news{
+  background-color: #789;
+  padding: 10%;
+  margin: 20px;
+}
+.social{
+  background-color: #789;
+  padding: 10%;
+  margin: 20px;
+}
+@media screen and (min-width: 600px) {
+  footer {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20%;
+  }
+}
