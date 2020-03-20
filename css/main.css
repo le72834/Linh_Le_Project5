@@ -24,7 +24,6 @@ a {
 }
 .siteContainer {
   margin: 0 auto;
-  width: 100%;
   margin-left: 20px;
   margin-right: 20px;
 
@@ -154,70 +153,67 @@ ul li a:hover {
   }
 }
 #promo {
-  padding-top: 30%;
-  width: 97%;
+  padding-top: 400px;
   background-color: #789;
 
 }
 #welcome {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: center;
 }
 .welcomepic {
   margin-top: 20px;
-  padding-top: 10%;
-  width: 45%;
+  padding-top: 100px;
+  width: 300px;
   background-color: #789;
 
 }
 .welcometext {
   margin-top: 20px;
-  padding-top: 10%;
-  width: 40%;
+  padding-top: 100px;
+  width: 300px;
   background-color: #789;
 
 }
 @media screen and (min-width: 700px) {
   #welcome {
-    width: 97%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
 }
 #features {
   margin-top: 20px;
-  width: 97%;
   display: flex;
   flex-direction: column;
   padding-top: 20px;
 }
 .feature1 {
   background-color: pink;
-  width: 80%;
-  padding: 5%;
+  width: 100px;
+  padding: 20px;
   margin: 10px;
 
 }
 .feature2 {
   background-color: pink;
-  width: 80%;
-  padding: 5%;
+  width: 100px;
+  padding: 20px;
   margin: 10px;
 
 }
 .feature3 {
   background-color: #789;
-  width: 80%;
-  padding: 5%;
+  width: 100px;
+  padding: 20px;
   margin: 10px;
 
 }
 .feature4 {
   background-color: #789;
-  width: 80%;
-  padding: 5%;
+  width: 100px;
+  padding: 20px;
   margin: 10px;
 
 }
@@ -226,12 +222,14 @@ ul li a:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    width: 97%;
+
+
    }
   .featureleft {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    justify-content: center;
+
    }
   .feature1, .feature2 {
     background-color: pink;
@@ -239,10 +237,8 @@ ul li a:hover {
   .featureright {
     display: flex;
     flex-direction: column;
-    width: 100%;
-
-
-  }
+    justify-content: center;
+   }
 
 }
 @media screen and (min-width: 780px) {
@@ -254,7 +250,8 @@ ul li a:hover {
   .featureleft {
     display: flex;
     flex-direction: row;
-    width: 100%;
+
+
 
   }
   .feature1, .feature2 {
@@ -263,7 +260,7 @@ ul li a:hover {
   .featureright {
     display: flex;
     flex-direction: row;
-    width: 100%;
+
 
   }
 }
@@ -274,44 +271,45 @@ ul li a:hover {
 }
 .product1 {
   background-color: black;
-  padding: 5%;
-  width: 80%;
+  padding: 20px;
+  width: 200px;
   margin: 10px;
 }
 .product2 {
   background-color: black;
-  padding: 5%;
-  width: 80%;
+  padding: 20px;
+  width: 200px;
   margin: 10px;
 }
 .product3 {
   background-color: black;
-  padding: 5%;
-  width: 80%;
+  padding: 20px;
+  width: 200px;
   margin: 10px;
 }
 .product4 {
   background-color: #789;
-  padding: 5%;
-  width: 80%;
+  padding: 20px;
+  width: 200px;
   margin: 10px;
 }
 .product5 {
   background-color: #789;
-  padding: 5%;
-  width: 80%;
+  padding: 20px;
+  width: 200px;
   margin: 10px;
 }
 .product6 {
   background-color: #789;
-  padding: 5%;
-  width: 80%;
+  padding: 20px;
+  width: 200px;
   margin: 10px;
 }
 @media screen and (min-width:600px) {
   #products {
   display: grid;
-  grid-template-columns: 33% 33%;
+  grid-template-columns: 300px 300px;
+  justify-content: center;
   }
   .product1,.product2, .product3 {
     background-color: black;
@@ -321,7 +319,8 @@ ul li a:hover {
 @media screen and (min-width:780px) {
   #products {
   display: grid;
-  grid-template-columns: 33% 33% 33%;
+  grid-template-columns: 250px 250px 250px;
+  justify-content: center;
   }
   .product1,.product2, .product3 {
     background-color: black;
@@ -332,17 +331,17 @@ ul li a:hover {
 #sales {
   display: flex;
   flex-direction: column;
-  width: 97%;
+
 }
 .sale1 {
-  width: 70%;
-  padding: 5%;
+  width: 300px;
+  padding: 20px;
   background-color: #123;
   margin: 10px;
 }
 .sale2 {
-  width: 70%;
-  padding: 5%;
+  width: 300px;
+  padding: 20px;
   background-color: #123;
   margin: 10px;
 }
@@ -350,38 +349,40 @@ ul li a:hover {
   #sales{
   display:flex;
   flex-direction:row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   }
 }
 footer {
   display: grid;
-  grid-template-columns: 40% 40%;
+  grid-template-columns: 200px 200px;
   justify-content: center;
+  margin: 20px;
 
 }
 .navfooter {
   background-color: #789;
-  padding: 10%;
+  padding: 20px;
   margin: 20px;
 }
 .contact {
   background-color: #789;
-  padding: 10%;
+  padding: 20px;
   margin: 20px;
 }
 .news{
   background-color: #789;
-  padding: 10%;
+  padding: 20px;
   margin: 20px;
 }
 .social{
   background-color: #789;
-  padding: 10%;
+  padding: 20px;
   margin: 20px;
 }
 @media screen and (min-width: 600px) {
   footer {
   display: grid;
-  grid-template-columns: 20% 20% 20% 20%;
+  grid-template-columns: 150px 150px 150px 150px;
+
   }
 }
